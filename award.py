@@ -1,9 +1,9 @@
 # Naming the variables and asking the user for input
-candidate_swimming_time=int(input("Please enter the swimming time in minutes: "))
-candidate_cycling_time=int(input("Please enter the cycling time in minutes: "))
-candidate_running_time=int(input("Please enter the running time in minutes: "))
+candidate_swimming_time=int(input("Please enter the candidate swimming time in minutes: "))
+candidate_cycling_time=int(input("Please enter the candidate cycling time in minutes: "))
+candidate_running_time=int(input("Please enter the candidate running time in minutes: "))
 Total_time= candidate_swimming_time + candidate_cycling_time + candidate_running_time
-print(f"Total time taken: {Total_time} minutes")
+print(f"Total time taken by candidate: {Total_time} minutes")
 #Calculating the total time of the candidate to determine what colours they qualify for 
 Qualifying_time= 100 
 if Total_time <= Qualifying_time:
@@ -15,4 +15,4 @@ elif Total_time <= Qualifying_time + 10:
 else:
    award = "No award"
 #Printing out what colours the candidate has recieved
-print(f"Award recieved: {award}")
+print(f"Award recieved by candidate: {award}")
